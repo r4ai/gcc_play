@@ -18,3 +18,4 @@ Options:
 3. `poetry install`
 4. `poetry build`
 5. `pip install ./dist/my_python_commands-0.1.0.tar.gz`
+6. `cd ../ && rm -rf ./gcc_play`
