@@ -2,7 +2,7 @@
 name = "gcc_play"
 version = "0.1.0"
 description = "linux commands built with python for my own use."
-authors = ["t4aru"]
+authors = ["rai"]
 license = "MIT"
 
 [tool.poetry.dependencies]
