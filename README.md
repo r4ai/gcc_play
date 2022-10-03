@@ -1,4 +1,4 @@
-# gcc_play
+# gcc_play  [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/e9716/gcc_play/actions/workflows/publish.yml/badge.svg)](https://github.com/e9716/gcc_play/actions/workflows/publish.yml) ![PyPI](https://img.shields.io/pypi/v/gcc-play)
 
 ```bash
 Usage: gcc_play [OPTIONS] FILENAME
