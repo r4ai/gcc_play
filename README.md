@@ -11,11 +11,19 @@ Options:
   --help         Show this message and exit.
 ```
 
+## how to install
+
+```txt
+pip install gcc-play
+```
+
+# development
+
 ## requirements
 
 - poetry
 
-## how to install
+## how to build
 
 1. `git clone https://github.com/e9716/gcc_play.git`
 2. `cd ./gcc_play`
