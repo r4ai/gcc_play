@@ -28,7 +28,7 @@ def gcc_play(compile, silent, debug, force, filename):
                 default=True,
             )
             if not is_confirm:
-                return
+                return 0
 
         # * compile
         sp.run(f"gcc {filepath} -o {out_filepath}", shell=True)
@@ -59,4 +59,4 @@ def gcc_play(compile, silent, debug, force, filename):
         click.echo(f"filepath: {filepath}")
         click.echo(f"out_filepath: {out_filepath}")
 
-    return
+    return 0
