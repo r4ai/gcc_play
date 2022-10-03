@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gcc_play"
-version = "0.1.0"
+version = "0.2.0"
 description = "linux commands built with python for my own use."
 authors = ["rai"]
 license = "MIT"

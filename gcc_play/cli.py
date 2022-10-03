@@ -17,11 +17,10 @@ def gcc_play(compile, silent, debug, force, filename):
     filename = Path(filename)
     filepath = cwd / Path(filename)
 
-
     if compile:
-        out_filepath = cwd / Path(filename.stem)
+        out_filepath = cwd / filename.parent / Path(filename.stem)
 
-        #* conflict check
+        # * conflict check
         if (out_filepath.is_file()) and (not force):
             is_confirm = click.confirm(
                 "A compiled file already exists. Do you want to overwrite it?",
@@ -31,15 +30,21 @@ def gcc_play(compile, silent, debug, force, filename):
             if not is_confirm:
                 return
 
-        #* compile
+        # * compile
         sp.run(f"gcc {filepath} -o {out_filepath}", shell=True)
         if not silent:
             click.echo(f"compiled {filename} as {out_filepath}.")
 
     else:
-        out_filepath = cwd / Path(f"{filename.stem}.{''.join([str(randint(0, 9)) for _ in range(16)])}.out")
+        out_filepath = (
+            cwd
+            / filename.parent
+            / Path(
+                f"{filename.stem}.{''.join([str(randint(0, 9)) for _ in range(16)])}.out"
+            )
+        )
 
-        #* compile
+        # * compile
         sp.run(f"gcc {filepath} -o {out_filepath}", shell=True)
 
         # * exec compiled file

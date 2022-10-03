@@ -1,3 +1,5 @@
+# gcc_play
+
 ```bash
 Usage: gcc_play [OPTIONS] FILENAME
 
@@ -9,10 +11,12 @@ Options:
   --help         Show this message and exit.
 ```
 
-### requirements
+## requirements
+
 - poetry
 
-### how to install
+## how to install
+
 1. `git clone https://github.com/e9716/gcc_play.git`
 2. `cd ./gcc_play`
 3. `poetry install`
